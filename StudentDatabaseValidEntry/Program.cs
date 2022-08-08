@@ -1,0 +1,1 @@
+﻿Console.WriteLine("Please choose by typing 'hometown' or 'favorite food'.");
