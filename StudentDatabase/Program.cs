@@ -45,7 +45,7 @@ do
             Console.WriteLine($"{names[num]} is from {hometown[num]}.");
 
         }
-        else if (entry2 == "favorite food")
+        else if (entry2 == "favorite food" || entry2 == "food")
         {
             confirm2 = true;
             Console.WriteLine($"{names[num]}'s favorite food is {faveFood[num]}.");
