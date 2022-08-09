@@ -1,15 +1,21 @@
-﻿string[] names = { "A", "B", "C", "D", "E" };
-string[] hometown = { "Port Huron, MI", "Gatlinburg, TN", "Venice, FL", "Rapid City, SD", "Tokyo, Japan" };
-string[] faveFood = { "Pizza", "BBQ", "Fish Tacos", "Buffalo Burger", "Sushi" };
+﻿string[] names = { "Jane Hopper", "Mike Wheeler", "Dustin Henderson", "Will Byers", "Lucus Sinclair" };
+string[] hometown = { "Hawkins, IN", "Gatlinburg, TN", "Venice, FL", "Rapid City, SD", "Lenora Hills, CA" };
+string[] faveFood = { "Eggo Waffles", "Cheeseburger", "Scoops Ahoy Ice Cream", "Grilled Cheese", "Pizza" };
 
 do
 {
+    
+    Console.WriteLine("Hello! Which student would you like to learn more about?");
+    for (int i = 0; i < names.Length; i++)
+    {
+        Console.WriteLine($"{i +1}. {names[i]}");
+    }
+
     bool confirm = false;
     int num = 0;
 
     while (confirm == false)
     {
-        Console.WriteLine("Hello! Which student would you like to learn more about?");
         Console.WriteLine("Enter a number 1-5:");
         string entry = Console.ReadLine();
         bool validNum = int.TryParse(entry, out num);
