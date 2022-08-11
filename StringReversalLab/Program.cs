@@ -1,11 +1,11 @@
-﻿//Reversing a word/full sentence in backwards order:
+﻿//Prompt for user to reverse a word/full sentence in backwards order:
 Console.WriteLine("Welcome! Please enter a word:");
 string entry = Console.ReadLine();
 ReverseWord(entry);
 
 Console.WriteLine();
 
-//Reversing Sentences while maintaining order: (Extra Challenge)
+//Prompt for user to reverse sentence while maintaining order: (Extra Challenge)
 Console.WriteLine("Enter a sentence to reverse:");
 string sentence = Console.ReadLine();
 ReverseSentence(sentence);
